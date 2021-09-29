@@ -1,11 +1,8 @@
-execute pathogen#infect()
-
+syntax enable
 syntax on
-filetype plugin indent on
 
 set background=dark
-"let g:soloarized_termcolors=256
-"colorscheme solarized
+colorscheme solarized
 
 filetype plugin indent on
 
@@ -25,3 +22,6 @@ set statusline+=%F
 
 command! Vb normal! <C-v>
 
+call plug#begin('~/.vim/plugged')
+
+call plug#end()
