@@ -19,9 +19,24 @@ nnoremap <C-y> 10<C-y>
 set laststatus=2
 set statusline+=%F
 
+"Disable function highlighting (affects both C and C++ files)
+"let g:cpp_function_highlight = 0
+
+" Enable highlighting of C++11 attributes
+let g:cpp_attributes_highlight = 1
+
+" Highlight struct/class member variables (affects both C and C++ files)
+let g:cpp_member_highlight = 1
+
+" Put all standard C and C++ keywords under Vim's highlight group 'Statement'
+" (affects both C and C++ files)
+let g:cpp_simple_highlight = 1
+
+
 
 command! Vb normal! <C-v>
 
 call plug#begin('~/.vim/plugged')
-
+Plug 'https://github.com/bfrg/vim-cpp-modern.git'
+Plug 'https://github.com/vim-airline/vim-airline.git'
 call plug#end()
