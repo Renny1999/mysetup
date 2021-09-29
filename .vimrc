@@ -37,6 +37,10 @@ let g:cpp_simple_highlight = 1
 command! Vb normal! <C-v>
 
 call plug#begin('~/.vim/plugged')
+" modern cpp syntax highlighting
 Plug 'https://github.com/bfrg/vim-cpp-modern.git'
+" airline (prettier vim status bar)
 Plug 'https://github.com/vim-airline/vim-airline.git'
+" better vim syntax highlighting
+Plug 'https://github.com/justinmk/vim-syntax-extra.git'
 call plug#end()
