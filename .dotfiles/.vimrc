@@ -1,14 +1,16 @@
 syntax enable
 syntax on
 
-set background=dark
-colorscheme solarized
+"set background=dark
+colorscheme gruvbox
 
 filetype plugin indent on
 
 set relativenumber
-set tabstop=2
-set shiftwidth=2
+"set tabstop=2
+"set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
 
 " scroll more lines
@@ -43,4 +45,10 @@ Plug 'https://github.com/bfrg/vim-cpp-modern.git'
 Plug 'https://github.com/vim-airline/vim-airline.git'
 " better vim syntax highlighting
 Plug 'https://github.com/justinmk/vim-syntax-extra.git'
+" said to be the best colorscheme
+Plug 'morhetz/gruvbox'
+" real-time markdown
+"   MarkdownPreview -> opens preview window
+"   MarkdownPreviewStop -> closes preview window and server
+Plug 'iamcco/markdown-preview.vim'
 call plug#end()
