@@ -13,9 +13,15 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+"""" Key mappings """"
 " scroll more lines
 nnoremap <C-e> 10<C-e>
 nnoremap <C-y> 10<C-y>
+
+" Keep cursor centered for search (n/N) and J
+nnoremap n nzzv
+nnoremap N Nzzzv
+nnoremap J mzJ`z
 
 " always show file name
 set laststatus=2
