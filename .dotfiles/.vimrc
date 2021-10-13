@@ -7,6 +7,7 @@ colorscheme gruvbox
 filetype plugin indent on
 
 set relativenumber
+set number
 "set tabstop=2
 "set shiftwidth=2
 set tabstop=4
@@ -29,6 +30,7 @@ inoremap , ,<c-g>u
 inoremap . .<c-g>u
 inoremap ! !<c-g>u
 inoremap ? ?<c-g>u
+inoremap <SPACE> <SPACE><c-g>u
 
 " always show file name
 set laststatus=2
