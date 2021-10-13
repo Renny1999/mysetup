@@ -23,6 +23,13 @@ nnoremap n nzzv
 nnoremap N Nzzzv
 nnoremap J mzJ`z
 
+" set break points for undo
+"   <c-g>u sets undo break point
+inoremap , ,<c-g>u
+inoremap . .<c-g>u
+inoremap ! !<c-g>u
+inoremap ? ?<c-g>u
+
 " always show file name
 set laststatus=2
 set statusline+=%F
