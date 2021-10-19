@@ -6,6 +6,9 @@ colorscheme gruvbox
 
 filetype plugin indent on
 
+" disable preset styles for certain filetypes
+let g:python_recommended_style=0
+
 set relativenumber
 set number
 set tabstop=2
