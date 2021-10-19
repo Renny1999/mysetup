@@ -8,13 +8,17 @@ filetype plugin indent on
 
 set relativenumber
 set number
-"set tabstop=2
-"set shiftwidth=2
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 
+" add a vertival line at column 80
+set cc=80
+
 """" Key mappings """"
+" Shift + TAB to remove tab in normal mode
+nnoremap <S-Tab> <C-d>
+
 " scroll more lines
 nnoremap <C-e> 10<C-e>
 nnoremap <C-y> 10<C-y>
