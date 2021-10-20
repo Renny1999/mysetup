@@ -1,10 +1,12 @@
 syntax enable
 syntax on
 
-"set background=dark
+set background=dark
 colorscheme gruvbox
 
-filetype plugin indent on
+filetype on
+filetype plugin on
+filetype indent on
 
 " disable preset styles for certain filetypes
 let g:python_recommended_style=0
@@ -72,5 +74,7 @@ Plug 'morhetz/gruvbox'
 " real-time markdown
 "   MarkdownPreview -> opens preview window
 "   MarkdownPreviewStop -> closes preview window and server
-Plug 'iamcco/markdown-preview.vim'
+"Plug 'iamcco/markdown-preview.vim'
+" coc client
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
