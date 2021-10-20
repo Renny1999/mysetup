@@ -1,7 +1,7 @@
 syntax enable
 syntax on
 
-"set background=dark
+set background=dark
 colorscheme gruvbox
 
 filetype plugin indent on
@@ -72,5 +72,5 @@ Plug 'morhetz/gruvbox'
 " real-time markdown
 "   MarkdownPreview -> opens preview window
 "   MarkdownPreviewStop -> closes preview window and server
-Plug 'iamcco/markdown-preview.vim'
+" Plug 'iamcco/markdown-preview.vim'
 call plug#end()
