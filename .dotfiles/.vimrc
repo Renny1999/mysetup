@@ -6,6 +6,9 @@ colorscheme gruvbox
 
 filetype plugin indent on
 
+" let vim know that the termianl supports 256 colors
+let &t_Co=256
+
 " disable preset styles for certain filetypes
 let g:python_recommended_style=0
 
