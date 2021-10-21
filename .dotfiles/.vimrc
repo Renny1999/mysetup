@@ -76,4 +76,6 @@ Plug 'morhetz/gruvbox'
 "   MarkdownPreview -> opens preview window
 "   MarkdownPreviewStop -> closes preview window and server
 " Plug 'iamcco/markdown-preview.vim'
+" better python syntax highlighting
+Plug 'sheerun/vim-polyglot'
 call plug#end()
