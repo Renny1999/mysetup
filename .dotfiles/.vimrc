@@ -64,18 +64,36 @@ let g:cpp_simple_highlight = 1
 command! Vb normal! <C-v>
 
 call plug#begin('~/.vim/plugged')
+
 " modern cpp syntax highlighting
 Plug 'https://github.com/bfrg/vim-cpp-modern.git'
+
 " airline (prettier vim status bar)
 Plug 'https://github.com/vim-airline/vim-airline.git'
+
 " better vim syntax highlighting
 Plug 'https://github.com/justinmk/vim-syntax-extra.git'
+
 " said to be the best colorscheme
 Plug 'morhetz/gruvbox'
+
 " real-time markdown
 "   MarkdownPreview -> opens preview window
 "   MarkdownPreviewStop -> closes preview window and server
 " Plug 'iamcco/markdown-preview.vim'
+
 " better python syntax highlighting
 Plug 'sheerun/vim-polyglot'
+
+" fzf (requirs fzf to be installed)
+Plug 'junegunn/fzf', {'do": { -> fzf#install() } }
 call plug#end()
+
+"""" Plugin specific settings """"
+" FZF
+" invoke fzf by ctrl P
+nmap <C-P> :FZF<CR>
+let g:fzf_layout = {'down' : '25%'}
+
+
+
