@@ -25,6 +25,17 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 rm ~/.vimrc
 ln -s $(pwd)/.dotfiles/.vimrc ~/.vimrc
 
+# set up the ~/.vim/ftplugin folder
+rm -rf ~/.vim/ftplugin
+mkdir -p ~/.vim/ftplugin
+#   create a symlink for each of the .vim files in ftplugin
+for file in $(pwd)/ftplugin/*; do
+  # $file contains the full path to the file
+  filename=$(basename $file);
+  echo "creating symlink ~/.vim/ftplugin/$filename -> $file"
+  ln -s $file  ~/.vim/ftplugin/$filename;
+done
+
 # zsh plug-ins
 
 #git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
