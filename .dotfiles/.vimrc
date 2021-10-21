@@ -89,11 +89,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', {'do": { -> fzf#install() } }
 call plug#end()
 
-"""" Plugin specific settings """"
-" FZF
-" invoke fzf by ctrl P
-nmap <C-P> :FZF<CR>
-let g:fzf_layout = {'down' : '25%'}
-
+""" source additional settins """
+source ~/.vim/plugins.vim
 
 
