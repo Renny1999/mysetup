@@ -82,6 +82,9 @@ Plug 'morhetz/gruvbox'
 "   MarkdownPreviewStop -> closes preview window and server
 " Plug 'iamcco/markdown-preview.vim'
 
+" coc
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 " better python syntax highlighting
 Plug 'sheerun/vim-polyglot'
 
