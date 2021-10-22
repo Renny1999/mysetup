@@ -114,7 +114,9 @@ Plug 'junegunn/fzf', {'do': { -> fzf#install() } }
 
 call plug#end()
 
-""" source additional settins """
-source ~/.vim/extra-plugins/plugins.conf.vim
+""" source additional settings """
+for f in split(glob('~/.vim/extra-plugins/*.vim'), '\n')
+  exe 'source' f
+endfor
 
 
