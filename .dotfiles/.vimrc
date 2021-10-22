@@ -86,10 +86,11 @@ Plug 'morhetz/gruvbox'
 Plug 'sheerun/vim-polyglot'
 
 " fzf (requirs fzf to be installed)
-Plug 'junegunn/fzf', {'do": { -> fzf#install() } }
+Plug 'junegunn/fzf', {'do': { -> fzf#install() } }
+
 call plug#end()
 
 """ source additional settins """
-source ~/.vim/plugins.vim
+source ~/.vim/extra-plugins/plugins.conf.vim
 
 
