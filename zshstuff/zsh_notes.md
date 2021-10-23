@@ -1,5 +1,5 @@
 Add the following to .zshrc to enable vim keybinding in shell:
-'''
+```
 # use vim bindings
 bindkey -v
 ################ show vim mode in shell ############################
@@ -30,4 +30,4 @@ function TRAPINT() {
 
 # custom prompt to show vim insert mode or command mode
 PROMPT=%{%f%b%k%}$(build_prompt)'${vim_mode}'
-'''
+```
