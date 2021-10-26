@@ -7,25 +7,32 @@ colorscheme gruvbox
 filetype plugin indent on
 
 " disable arrow keys
-cnoremap <Down> <Nop>
-cnoremap <Left> <Nop>
-cnoremap <Right> <Nop>
-cnoremap <Up> <Nop>
+"cnoremap <Down> <Nop>
+"cnoremap <Left> <Nop>
+"cnoremap <Right> <Nop>
+"cnoremap <Up> <Nop>
+"
+"inoremap <Down> <Nop>
+"inoremap <Left> <Nop>
+"inoremap <Right> <Nop>
+"inoremap <Up> <Nop>
+"
+"nnoremap <Down> <Nop>
+"nnoremap <Left> <Nop>
+"nnoremap <Right> <Nop>
+"nnoremap <Up> <Nop>
+"
+"vnoremap <Down> <Nop>
+"vnoremap <Left> <Nop>
+"vnoremap <Right> <Nop>
+"vnoremap <Up> <Nop>
 
-inoremap <Down> <Nop>
-inoremap <Left> <Nop>
-inoremap <Right> <Nop>
-inoremap <Up> <Nop>
+" map leader key to space
+nnoremap <SPACE> <Nop>
+let mapleader = " "
 
-nnoremap <Down> <Nop>
-nnoremap <Left> <Nop>
-nnoremap <Right> <Nop>
-nnoremap <Up> <Nop>
-
-vnoremap <Down> <Nop>
-vnoremap <Left> <Nop>
-vnoremap <Right> <Nop>
-vnoremap <Up> <Nop>
+" map JK to <esc>
+inoremap JK <esc>
 
 " let vim know that the termianl supports 256 colors
 let &t_Co=256
@@ -40,7 +47,7 @@ set shiftwidth=2
 set expandtab
 
 " add a vertival line at column 80
-set cc=80
+set cc=100
 
 """" Key mappings """"
 " Shift + TAB to remove tab in normal mode
@@ -79,8 +86,6 @@ let g:cpp_member_highlight = 1
 " Put all standard C and C++ keywords under Vim's highlight group 'Statement'
 " (affects both C and C++ files)
 let g:cpp_simple_highlight = 1
-
-
 
 command! Vb normal! <C-v>
 
