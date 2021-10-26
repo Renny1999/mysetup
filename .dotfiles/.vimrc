@@ -28,8 +28,8 @@ filetype plugin indent on
 "vnoremap <Up> <Nop>
 
 " map leader key to space
-nnoremap <SPACE> <Nop>
-let mapleader = " "
+"nnoremap <SPACE> <Nop>
+"let mapleader = " "
 
 " map JK to <esc>
 inoremap JK <esc>
