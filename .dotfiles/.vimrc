@@ -34,7 +34,8 @@ filetype plugin indent on
 "   * only fj works for visual mode because we'd like to hold donw j
 "   * timeoutlen is set to a small number so that only pressing f and j
 "     together can trigger the mapping
-set timeoutlen=1000
+autocmd InsertEnter * set timeoutlen=200
+autocmd InsertLeave * set timeoutlen=1000
 inoremap fj <esc>
 inoremap jf <esc>
 vnoremap fj <esc>
