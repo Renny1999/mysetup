@@ -1,6 +1,5 @@
 syntax enable
 syntax on
-
 set background=dark
 colorscheme gruvbox
 
@@ -21,7 +20,7 @@ filetype plugin indent on
 "nnoremap <Left> <Nop>
 "nnoremap <Right> <Nop>
 "nnoremap <Up> <Nop>
-"
+
 "vnoremap <Down> <Nop>
 "vnoremap <Left> <Nop>
 "vnoremap <Right> <Nop>
@@ -31,8 +30,15 @@ filetype plugin indent on
 "nnoremap <SPACE> <Nop>
 "let mapleader = " "
 
-" map JK to <esc>
-inoremap JK <esc>
+" pressing j and f together triggers <esc>
+"   * only fj works for visual mode because we'd like to hold donw j
+"   * timeoutlen is set to a small number so that only pressing f and j
+"     together can trigger the mapping
+set timeoutlen=1000
+inoremap fj <esc>
+inoremap jf <esc>
+vnoremap fj <esc>
+vnoremap jf <esc>
 
 " let vim know that the termianl supports 256 colors
 let &t_Co=256
@@ -46,13 +52,15 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+" for insert mode, highlight current line
+autocmd InsertEnter,InsertLeave * set cul!
+
 " add a vertival line at column 80
 set cc=100
 
 """" Key mappings """"
 " Shift + TAB to remove tab in normal mode
 nnoremap <S-Tab> <C-d>
-
 " scroll more lines
 nnoremap <C-e> 10<C-e>
 nnoremap <C-y> 10<C-y>
