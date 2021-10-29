@@ -3,6 +3,9 @@ syntax on
 set background=dark
 colorscheme gruvbox
 
+" transparent background
+hi Normal guibg=NONE ctermbg=NONE
+
 filetype plugin indent on
 
 " disable arrow keys
