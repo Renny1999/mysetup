@@ -101,6 +101,11 @@ let g:cpp_simple_highlight = 1
 
 command! Vb normal! <C-v>
 
+" remove background color when not focused to allow pane dimming in tmux
+" this color is for gruvbox; might not work otherwise
+autocmd FocusLost * hi Normal guibg=NONE ctermbg=NONE
+autocmd FocusGained * hi Normal guibg=NONE ctermbg=235
+
 call plug#begin('~/.vim/plugged')
 
 " modern cpp syntax highlighting
@@ -128,6 +133,9 @@ Plug 'sheerun/vim-polyglot'
 
 " fzf (requirs fzf to be installed)
 Plug 'junegunn/fzf', {'do': { -> fzf#install() } }
+
+" allow vim to detect focus lost/gain in tmux 
+Plug 'tmux-plugins/vim-tmux-focus-events'
 
 call plug#end()
 
