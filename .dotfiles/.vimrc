@@ -8,27 +8,6 @@ hi Normal guibg=NONE ctermbg=NONE
 
 filetype plugin indent on
 
-" disable arrow keys
-"cnoremap <Down> <Nop>
-"cnoremap <Left> <Nop>
-"cnoremap <Right> <Nop>
-"cnoremap <Up> <Nop>
-"
-"inoremap <Down> <Nop>
-"inoremap <Left> <Nop>
-"inoremap <Right> <Nop>
-"inoremap <Up> <Nop>
-"
-"nnoremap <Down> <Nop>
-"nnoremap <Left> <Nop>
-"nnoremap <Right> <Nop>
-"nnoremap <Up> <Nop>
-
-"vnoremap <Down> <Nop>
-"vnoremap <Left> <Nop>
-"vnoremap <Right> <Nop>
-"vnoremap <Up> <Nop>
-
 " map leader key to space
 "nnoremap <SPACE> <Nop>
 "let mapleader = " "
@@ -55,6 +34,7 @@ set number
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set backspace=2
 
 " for insert mode, highlight current line
 autocmd InsertEnter,InsertLeave * set cul!
