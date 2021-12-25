@@ -12,7 +12,7 @@ nnoremap <SPACE> <Nop>
 let mapleader = " "
 
 " :Q to forcifully exit vim
-nnoremap :Q :q!
+nnoremap :QWE :q!
 
 
 " transparent background
