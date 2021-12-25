@@ -1,31 +1,19 @@
 syntax enable
 syntax on
+filetype plugin indent on
 set background=dark
 colorscheme gruvbox
-
-" transparent background
-hi Normal guibg=NONE ctermbg=NONE
-
-filetype plugin indent on
-
-" map leader key to space
-"nnoremap <SPACE> <Nop>
-"let mapleader = " "
-
-" pressing j and f together triggers <esc>
-"   * only fj works for visual mode because we'd like to hold donw j
-"   * timeoutlen is set to a small number so that only pressing f and j
-"     together can trigger the mapping
-autocmd InsertEnter * set timeoutlen=200
-autocmd InsertLeave * set timeoutlen=1000
-inoremap fj <esc>
-inoremap jf <esc>
-vnoremap fj <esc>
-vnoremap jf <esc>
-
 " let vim know that the termianl supports 256 colors
 let &t_Co=256
 
+
+" map leader key to space
+nnoremap <SPACE> <Nop>
+let mapleader = " "
+
+
+" transparent background
+hi Normal guibg=NONE ctermbg=NONE
 " disable preset styles for certain filetypes
 let g:python_recommended_style=0
 
@@ -40,7 +28,7 @@ set backspace=2
 autocmd InsertEnter,InsertLeave * set cul!
 
 " add a vertival line at column 80
-set cc=100
+set cc=80
 
 """" Key mappings """"
 " Shift + TAB to remove tab in normal mode
