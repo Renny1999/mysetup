@@ -11,6 +11,9 @@ let &t_Co=256
 nnoremap <SPACE> <Nop>
 let mapleader = " "
 
+" :Q to forcifully exit vim
+nnoremap :Q :q!
+
 
 " transparent background
 hi Normal guibg=NONE ctermbg=NONE
