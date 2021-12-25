@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 
 # need to do a few things:
 # install vim?
@@ -39,6 +39,10 @@ fi
 # set up .vimrc
 rm ~/.vimrc
 ln -s $(pwd)/.dotfiles/.vimrc ~/.vimrc
+
+# set up plugins.vim for ~/.vimr/plugins.vim
+rm ~/.vim/plugins.vim
+ln -s $(pwd)/vimstuff/plugins.vim ~/.vim/plugins.vim
 
 # set up the ~/.vim/ftplugin folder
 rm -rf ~/.vim/ftplugin
