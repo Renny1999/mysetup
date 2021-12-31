@@ -14,6 +14,8 @@ let mapleader = " "
 " :Q to forcifully exit vim
 nnoremap :QWE :q!
 
+" :ec to edit init.vim
+nnoremap :ec :tabe $HOME/.config/nvim/init.vim
 
 " transparent background
 hi Normal guibg=NONE ctermbg=NONE
@@ -69,6 +71,9 @@ let g:cpp_member_highlight = 1
 " Put all standard C and C++ keywords under Vim's highlight group 'Statement'
 " (affects both C and C++ files)
 let g:cpp_simple_highlight = 1
+
+" Set airline theme to 'dark'
+let g:airline_theme = 'dark'
 
 command! Vb normal! <C-v>
 
