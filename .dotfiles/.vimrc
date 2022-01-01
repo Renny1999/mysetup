@@ -1,8 +1,6 @@
 syntax enable
 syntax on
 filetype plugin indent on
-set background=dark
-colorscheme gruvbox
 " let vim know that the termianl supports 256 colors
 let &t_Co=256
 
@@ -78,6 +76,8 @@ autocmd FocusLost * hi Normal guibg=NONE ctermbg=NONE
 autocmd FocusGained * hi Normal guibg=NONE ctermbg=235
 
 source ~/.vim/plugins.vim
+set background=dark
+colorscheme gruvbox
 
 
 """ source additional settings """
