@@ -87,8 +87,15 @@ source ~/.local/share/nvim/site/plugins.vim
 set background=dark
 colorscheme gruvbox
 
+lua << EOF
+require'lspconfig'.pyright.setup{}
+EOF
+
+lua << EOF
+require'lspconfig'.rust_analyzer.setup{}
+EOF
 
 """ source additional settings """
-for f in split(glob('~/.config/nvim/extra-plugins/*.vim'), '\n')
+for f in split(glob('~/.local/share/nvim/extra-plugins/*.vim'), '\n')
   exe 'source' f
 endfor
